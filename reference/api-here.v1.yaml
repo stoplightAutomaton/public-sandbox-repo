@@ -1,6 +1,6 @@
 openapi: 3.0.0
 info:
-  title: api here
+  title: api here and there
   version: '1.0'
   description: 'Hurray for changes!'
 servers:
