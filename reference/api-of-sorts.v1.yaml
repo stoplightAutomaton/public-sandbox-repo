@@ -1,9 +1,43 @@
-openapi: '3.0.0'
+openapi: 3.0.0
 info:
   title: api of sorts
   version: '1.0'
 servers:
-- url: http://localhost:3000
-paths: {}
+  - url: 'http://localhost:3000'
+paths:
+  /users:
+    get:
+      summary: efw
+      tags: []
+      responses: {}
+      operationId: get-users
+  '/users/{userId}':
+    parameters:
+      - type: string
+        name: userId
+        in: path
+        required: true
+    get:
+      summary: Your GET endpoint
+      tags: []
+      responses: {}
+      operationId: get-users-userId
+  /things:
+    get:
+      summary: fsdvsz
+      tags: []
+      responses: {}
+      operationId: get-things
+  '/things/{thingId}':
+    parameters:
+      - type: string
+        name: thingId
+        in: path
+        required: true
+    get:
+      summary: fsdvsz
+      tags: []
+      responses: {}
+      operationId: get-things-thingId
 components:
   schemas: {}
